@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 
-docker build --tag fastapi .
+docker-compose build
 docker-compose up
