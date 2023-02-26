@@ -16,6 +16,14 @@ POST /api/form
 }
 ```
 
+Response 201 Created
+
+```json
+[
+    "OK"
+]
+```
+
 ## Show data
 POST /api/admin
 
@@ -24,3 +32,24 @@ POST /api/admin
     "key": "<ADMIN_KEY>"
 }
 ```
+
+Response 200 OK
+
+```json
+[
+    {
+        "num": 1111,
+        "name": "str",
+        "phone": "str",
+        "mail": "str",
+        "q0": "str",
+        "q1": "str",
+        "q2": "str"
+    }
+]
+```
+
+Response 401 Unauthorized
+[
+    "Auth fail"
+]

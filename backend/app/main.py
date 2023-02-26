@@ -47,6 +47,6 @@ async def admin(key: Key, response: Response):
       ret.append(tmp)
     return parse_obj_as(List[Data], ret)
   else:
-    response.status_code = status.HTTP_201_CREATED
+    response.status_code = 401
     return {"Auth fail"}
 
