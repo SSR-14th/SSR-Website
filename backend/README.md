@@ -1,6 +1,8 @@
 # SSR API
 API for SSR Website
 
+require : docker, docker-compose, python3
+
 ## How to use
 Setup (or reset)
 
