@@ -20,13 +20,7 @@ class DBForm(Base):
   q1 = Column(String, nullable=False)
   q2 = Column(String, nullable=False)
 
-if os.path.isfile(".set"):
-  Base.metadata.bind = engine
-else:
-  Base.metadata.create_all(engine)
-  fp = open(".set", "wt")
-  fp.write("SET")
-  fp.close()
+Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 
