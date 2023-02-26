@@ -50,6 +50,9 @@ Response 200 OK
 ```
 
 Response 401 Unauthorized
+
+```json
 [
     "Auth fail"
 ]
+```
