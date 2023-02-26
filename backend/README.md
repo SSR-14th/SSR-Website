@@ -1,6 +1,25 @@
 # SSR API
 API for SSR Website
 
+## How to use
+Setup (or reset)
+
+```bash
+./setup.py
+```
+
+Run
+
+```bash
+./run.sh
+```
+
+Stop
+
+```bash
+./stop.sh
+```
+
 ## Send data
 POST /api/form
 
