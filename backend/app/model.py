@@ -1,21 +1,41 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean
-from sqlalchemy.orm import relationship
+import os
 
-from board.domain.board import PostInfo
-from board.repositories.base import Base
+from app.config import *
 
-from datetime import datetime
+from sqlalchemy import *
+from sqlalchemy.orm import *
 
-from board.utils import ToEntity
+Base = declarative_base()
+engine = create_engine(DSN, echo = True)
 
-class DBForms(Base):
-  __tablename__ = 'forms'
+class DBForm(Base):
+  __tablename__ = "form"
 
-  id: Column(Integer, primary_key=True)
-  num: Column(Integer, nullable=False)
-  name: Column(String, nullable=False)
-  phone: Column(String, nullable=False)
-  mail: Column(String, nullable=False)
-  q0: Column(String, nullable=False)
-  q1: Column(String, nullable=False)
-  q2: Column(String, nullable=False)
+  id = Column(Integer, primary_key=True)
+  num = Column(Integer, nullable=False)
+  name = Column(String, nullable=False)
+  phone = Column(String, nullable=False)
+  mail = Column(String, nullable=False)
+  q0 = Column(String, nullable=False)
+  q1 = Column(String, nullable=False)
+  q2 = Column(String, nullable=False)
+
+if os.path.isfile(".set"):
+  Base.metadata.bind = engine
+else:
+  Base.metadata.create_all(engine)
+  fp = open(".set", "wt")
+  fp.write("SET")
+  fp.close()
+
+Session = sessionmaker(bind=engine)
+
+class SessionContext:
+  session = None
+
+  def __enter__(self):
+    self.session = Session()
+    return self.session
+
+  def __exit__(self, exc_type, exc_value, traceback):
+    self.session.close()
