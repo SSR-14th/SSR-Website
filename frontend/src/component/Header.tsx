@@ -17,6 +17,7 @@ const MenuItem = (props: any) => {
 const Header = () => {
   return (
     <div>
+      <header>
       <div className="head">
         <div className="logo">
           <Link to="/">
@@ -32,6 +33,7 @@ const Header = () => {
         </div>
       </div>
       <hr />
+      </header>
     </div>
   );
 };
