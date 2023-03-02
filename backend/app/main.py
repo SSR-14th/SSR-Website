@@ -24,7 +24,7 @@ app.add_middleware(
 )
 
 class Data(BaseModel):
-  num: int
+  num: str
   name: str
   phone: str
   mail: str

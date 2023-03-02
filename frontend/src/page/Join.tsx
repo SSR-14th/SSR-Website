@@ -40,14 +40,9 @@ function Main() {
     setDisabled(true);
     event.preventDefault();
     await new Promise((r) => setTimeout(r, 1000));
-    if(!isNumeric(num)) {
-      setDisabled(false);
-      alert("학번에는 숫자를 입력해 주세요.");
-      return;
-    }
     axios.post( SSR_API + "/api/form",
     {
-      num: parseInt(num),
+      num: num,
       name: name,
       phone: phone,
       mail: mail,

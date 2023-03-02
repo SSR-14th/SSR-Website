@@ -12,7 +12,7 @@ class DBForm(Base):
   __tablename__ = "form"
 
   id = Column(Integer, primary_key=True)
-  num = Column(Integer, nullable=False)
+  num = Column(String, nullable=False)
   name = Column(String, nullable=False)
   phone = Column(String, nullable=False)
   mail = Column(String, nullable=False)
