@@ -2,6 +2,14 @@ body {
   background-color: #282c34;
 }
 
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 .Main {
   text-align: center;
 }
@@ -14,4 +22,12 @@ body {
   color: white;
   font-weight: bold;
   font-size: x-large;
+}
+
+.about-img {
+  width: 200px;
+}
+
+.Source {
+  color: #808080;
 }
