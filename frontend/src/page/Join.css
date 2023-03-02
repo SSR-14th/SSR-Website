@@ -20,7 +20,7 @@ body {
   width: 600px;
   max-width: 90%;
 	height: 30px;
-  color: white;
+  color: black;
   background: #D9D9D9;
   border: 0;
 }
@@ -29,7 +29,7 @@ body {
   width: 600px;
   max-width: 90%;
   height: 200px;
-  color: white;
+  color: black;
   background: #D9D9D9;
   border: 0;
 }
