@@ -2,19 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  clear: both;
 }
 
 .menu {
   height: 3.5rem;
-  width: 25%;
 }
 
 .menu-item {
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-block;
   font-size: 1.2rem;
   font-style: bold;
   line-height: 3.5rem;
-  width: 20%;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;

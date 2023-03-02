@@ -10,6 +10,12 @@ body {
   padding: 50px;
 }
 
+.SSRImage-img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;  
+}
+
 .SSRText {
   color: white;
   font-weight: bold;

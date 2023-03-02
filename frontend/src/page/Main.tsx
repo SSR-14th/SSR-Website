@@ -13,7 +13,7 @@ const Main = () => {
       <Header/>
       <div className="Main">
         <div className="SSRImage">
-          <img alt="SSR" src={require('../img/SSR-background.png')} />
+          <img className="SSRImage-img" alt="SSR" src={require('../img/SSR-background.png')} />
         </div>
         <div className="SSRText">
           한세사이버보안고등학교 시스템보안연구동아리 (SSR)
