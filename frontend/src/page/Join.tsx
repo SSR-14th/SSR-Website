@@ -76,7 +76,7 @@ function Main() {
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
-          <div className="Text">학번</div>
+          <div className="Text">학번 ex) N20109</div>
           <br/>
           <input
           className="small-input"
