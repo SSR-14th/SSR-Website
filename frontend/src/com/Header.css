@@ -1,13 +1,3 @@
-.title {
-  height: 3.5rem;
-  width: 100vw;
-  line-height: 3.5rem;
-  color: #BBB8FF;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .menu {
   height: 3.5rem;
 }
@@ -18,7 +8,7 @@
   font-size: 1.2rem;
   font-style: bold;
   line-height: 3.5rem;
-  width: 33.3333%;
+  width: 25%;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;

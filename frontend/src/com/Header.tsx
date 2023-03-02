@@ -8,16 +8,15 @@ const MenuItem = (props: any) => {
   );
 };
 
-const Header = (props: any) => {
-  const { children } = props;
+const Header = () => {
   return (
     <div>
       <img src={require('../img/SSR-logo.png')} />
-      <div className="title">{children}</div>
       <div className="menu">
-        <MenuItem>홈</MenuItem>
-        <MenuItem>소개</MenuItem>
-        <MenuItem>포스트</MenuItem>
+        <MenuItem>main</MenuItem>
+        <MenuItem>about</MenuItem>
+        <MenuItem>result</MenuItem>
+        <MenuItem>FAQ</MenuItem>
       </div>
       <hr/>
     </div>
