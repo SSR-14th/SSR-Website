@@ -17,16 +17,18 @@ const MenuItem = (props: any) => {
 const Header = () => {
   return (
     <div>
-      <div className="logo">
-        <img alt="SSR" src={require('../img/SSR-logo.png')} />
+      <div className="head">
+        <div className="logo">
+          <img className="logo-img" alt="SSR" src={require('../img/SSR-logo.png')} />
+        </div>
+        <div className="menu">
+          <MenuItem to="/">main</MenuItem>
+          <MenuItem to="/about">about</MenuItem>
+          <MenuItem to="/result">result</MenuItem>
+          <MenuItem to="/faq">FAQ</MenuItem>
+        </div>
       </div>
-      <div className="menu">
-        <MenuItem to="/">main</MenuItem>
-        <MenuItem to="/about">about</MenuItem>
-        <MenuItem to="/result">result</MenuItem>
-        <MenuItem to="/faq">FAQ</MenuItem>
-      </div>
-      <hr/>
+      <hr />
     </div>
   );
 };
