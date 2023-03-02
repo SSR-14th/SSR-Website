@@ -7,6 +7,10 @@ import axios from 'axios';
 import Header from "../component/Header";
 import Name from "../component/Name";
 
+function isNumeric(data : string) : boolean {
+  return !isNaN(Number(data));
+}
+
 function Main() {
   const SSR_API: string = "http://127.0.0.1:8000";
   const [disabled, setDisabled]: any = useState(false);
@@ -36,6 +40,11 @@ function Main() {
     setDisabled(true);
     event.preventDefault();
     await new Promise((r) => setTimeout(r, 1000));
+    if(!isNumeric(num)) {
+      setDisabled(false);
+      alert("학번에는 숫자를 입력해 주세요.");
+      return;
+    }
     axios.post( SSR_API + "/api/form",
     {
       num: parseInt(num),
@@ -52,10 +61,11 @@ function Main() {
         'Accept': 'application/json'
       }
     })
-    .then((response) => { console.log(response.data); })
-    .catch((response) => { console.log("서버 오류") });
+    .then((response) => { alert("제출이 완료되었습니다."); })
+    .catch((response) => { alert("서버 오류") });
     //alert("제출이 완료되었습니다.");
     setDisabled(false);
+    return;
   };
 
   return (
