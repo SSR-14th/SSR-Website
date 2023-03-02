@@ -22,8 +22,8 @@ body {
 }
 
 .menu-item {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
   display: inline-block;
   font-size: 1.2rem;
   font-style: bold;
@@ -46,5 +46,5 @@ body {
 .logo-img {
   width: 45px;
   height: 45px;
-  padding: 10px;
+  padding: 8px;
 }
