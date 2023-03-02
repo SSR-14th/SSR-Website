@@ -15,3 +15,22 @@ body {
   font-weight: bold;
   font-size: x-large;
 }
+
+.faq-list {
+  text-align: center;
+  display: flex;
+  justify-content : center;
+
+}
+
+.Q {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.A {
+  text-align: left;
+  color: #d3d3d3;
+}
