@@ -28,7 +28,7 @@ function Main() {
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
-          <div className="Text">System Security Research</div>
+          <div className="Text">자기소개서</div>
           <br/>
           <input
           type="password"
@@ -36,9 +36,19 @@ function Main() {
           value={password}
           onChange={handleChange}
           />
-          <button type="submit" disabled={disabled}>
-            제출
-          </button>
+          <br/><br/>
+
+          <div className="Text">합격 후 포부</div>
+          <br/>
+          <input
+          type="password"
+          name="password"
+          value={password}
+          onChange={handleChange}
+          />
+          <br/><br/>
+
+          <button type="submit" disabled={disabled}>제출</button>
         </form>
       </div>
     </div>
