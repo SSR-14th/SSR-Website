@@ -10,7 +10,7 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>-Result-</Name>
+        <Name>- Result -</Name>
         <br/>
         <br/>
         <div className="Text">System Security Research</div>

@@ -41,7 +41,7 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>-Join-</Name>
+        <Name>- Join -</Name>
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
