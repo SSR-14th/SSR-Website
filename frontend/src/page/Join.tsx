@@ -8,10 +8,27 @@ import Name from "../component/Name";
 function Main() {
   const [disabled, setDisabled]: any = useState(false);
   
-  const [password, setPassword]: any = useState("");
+  const [num, setNum]: any = useState("");
+  const handleChangeNum = (input: any) => setNum(input.target.value);
+ 
+  const [name, setName]: any = useState("");
+  const handleChangeName = (input: any) => setName(input.target.value);
 
-  const handleChange = (input: any) => setPassword(input.target.value);
-  
+  const [phone, setPhone]: any = useState("");
+  const handleChangePhone = (input: any) => setPhone(input.target.value);
+
+  const [mail, setMail]: any = useState("");
+  const handleChangeMail = (input: any) => setMail(input.target.value);
+
+  const [q0, setQ0]: any = useState("");
+  const handleChangeQ0 = (input: any) => setQ0(input.target.value);
+
+  const [q1, setQ1]: any = useState("");
+  const handleChangeQ1 = (input: any) => setQ1(input.target.value);
+
+  const [q2, setQ2]: any = useState("");
+  const handleChangeQ2 = (input: any) => setQ2(input.target.value);
+
   const handleSubmit = async (event: any) => {
     setDisabled(true);
     event.preventDefault();
@@ -28,25 +45,75 @@ function Main() {
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
+          <div className="Text">학번</div>
+          <br/>
+          <input
+          type="text"
+          name="num"
+          value={num}
+          onChange={handleChangeNum}
+          />
+          <br/><br/><br/>
+
+          <div className="Text">이름</div>
+          <br/>
+          <input
+          type="text"
+          name="text"
+          value={name}
+          onChange={handleChangeName}
+          />
+          <br/><br/><br/>
+
+          <div className="Text">전화번호</div>
+          <br/>
+          <input
+          type="tel"
+          name="phone"
+          value={phone}
+          onChange={handleChangePhone}
+          />
+          <br/><br/><br/>
+
+          <div className="Text">이메일 주소</div>
+          <br/>
+          <input
+          type="email"
+          name="mail"
+          value={mail}
+          onChange={handleChangeMail}
+          />
+          <br/><br/><br/>
+
+          <div className="Text">관심분야</div>
+          <br/>
+          <input
+          type="text"
+          name="q0"
+          value={q0}
+          onChange={handleChangeQ0}
+          />
+          <br/><br/><br/>
+
           <div className="Text">자기소개서</div>
           <br/>
           <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
+          type="text"
+          name="q1"
+          value={q1}
+          onChange={handleChangeQ1}
           />
-          <br/><br/>
+          <br/><br/><br/>
 
           <div className="Text">합격 후 포부</div>
           <br/>
           <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
+          type="text"
+          name="q2"
+          value={q2}
+          onChange={handleChangeQ2}
           />
-          <br/><br/>
+          <br/><br/><br/>
 
           <button type="submit" disabled={disabled}>제출</button>
         </form>
