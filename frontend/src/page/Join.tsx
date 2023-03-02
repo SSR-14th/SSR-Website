@@ -12,7 +12,7 @@ function isNumeric(data : string) : boolean {
 }
 
 function Main() {
-  const SSR_API: string = "http://127.0.0.1:8000";
+  const SSR_API: string = "https://ssr2023api.run.goorm.site";
   const [disabled, setDisabled]: any = useState(false);
   
   const [num, setNum]: any = useState("");
