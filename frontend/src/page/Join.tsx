@@ -1,20 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Join.css';
 import './Style.css';
 
 import Header from "../component/Header";
+import Name from "../component/Name";
 
 function Main() {
+  const [disabled, setDisabled]: any = useState(false);
+  
+  const [password, setPassword]: any = useState("");
+
+  const handleChange = (input: any) => setPassword(input.target.value);
+  
+  const handleSubmit = async (event: any) => {
+    setDisabled(true);
+    event.preventDefault();
+    await new Promise((r) => setTimeout(r, 1000));
+    alert("제출이 완료되었습니다.");
+    setDisabled(false);
+  };
+
   return (
     <div className="App">
       <Header/>
       <div className="Main">
-        <div className="SSRImage">
-          <img alt="SSR" src={require('../img/SSR-background.png')} />
-        </div>
-        <div className="SSRText">
-          한세사이버보안고등학교 시스템보안연구동아리 (SSR)
-        </div>
+        <Name>-About-</Name>
+        <br/>
+        <br/>
+        <form onSubmit={handleSubmit}>
+          <div className="Text">System Security Research</div>
+          <br/>
+          <input
+          type="password"
+          name="password"
+          value={password}
+          onChange={handleChange}
+          />
+          <button type="submit" disabled={disabled}>
+            제출
+          </button>
+        </form>
       </div>
     </div>
   );
