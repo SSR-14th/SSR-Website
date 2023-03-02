@@ -4,11 +4,13 @@ import "./Header.css";
 import { Link } from 'react-router-dom';
 
 const MenuItem = (props: any) => {
-  const { children } = props;
+  const { children, to } = props;
   return (
-    <div className="menu-item">
-      <Link className="menu-item-link" to="/">{children}</Link>
-    </div>
+    <Link className="menu-item-link" to={to}>
+      <div className="menu-item">
+        {children}
+      </div>
+    </Link>
   );
 };
 
@@ -19,10 +21,10 @@ const Header = () => {
         <img alt="SSR" src={require('../img/SSR-logo.png')} />
       </div>
       <div className="menu">
-        <MenuItem>main</MenuItem>
-        <MenuItem>about</MenuItem>
-        <MenuItem>result</MenuItem>
-        <MenuItem>FAQ</MenuItem>
+        <MenuItem to="/">main</MenuItem>
+        <MenuItem to="/about">about</MenuItem>
+        <MenuItem to="/result">result</MenuItem>
+        <MenuItem to="/faq">FAQ</MenuItem>
       </div>
       <hr/>
     </div>
