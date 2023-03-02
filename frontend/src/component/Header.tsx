@@ -11,7 +11,9 @@ const MenuItem = (props: any) => {
 const Header = () => {
   return (
     <div>
-      <img src={require('../img/SSR-logo.png')} />
+      <div className="logo">
+        <img alt="SSR" src={require('../img/SSR-logo.png')} />
+      </div>
       <div className="menu">
         <MenuItem>main</MenuItem>
         <MenuItem>about</MenuItem>

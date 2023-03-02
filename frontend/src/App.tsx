@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './img/SSR-logo.png';
 import './App.css';
 
-import Header from "./com/Header";
+import Header from "./component/Header";
 
 function App() {
   return (
