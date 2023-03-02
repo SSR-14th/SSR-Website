@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import Header from "./component/Header";
+import { Route, Routes } from 'react-router-dom';
+
+import Mome from './page/Main';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Mome />} />
+    </Routes>
   );
 }
 
