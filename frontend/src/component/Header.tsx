@@ -25,6 +25,7 @@ const Header = () => {
         </div>
         <div className="menu">
           <MenuItem to="/">main</MenuItem>
+          <MenuItem to="/join">Join</MenuItem>
           <MenuItem to="/about">about</MenuItem>
           <MenuItem to="/result">result</MenuItem>
           <MenuItem to="/faq">FAQ</MenuItem>
