@@ -8,9 +8,11 @@ const MenuItem = (props: any) => {
   );
 };
 
-const Header = () => {
+const Header = (props: any) => {
+  const { children } = props;
   return (
     <div>
+      <div className="title">{children}</div>
       <div className="menu">
         <MenuItem>홈</MenuItem>
         <MenuItem>소개</MenuItem>

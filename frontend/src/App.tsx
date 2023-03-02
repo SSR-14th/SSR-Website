@@ -7,7 +7,7 @@ import Header from "./com/Header";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header>SSR</Header>
     </div>
   );
 }
