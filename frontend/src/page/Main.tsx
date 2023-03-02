@@ -18,7 +18,8 @@ const Main = () => {
         <div className="SSRText">
           한세사이버보안고등학교 시스템보안연구동아리 (SSR)
         </div>
-        <button onClick={ () => {navigate("/join")} }>14기 지원하러 가기</button>
+        <br />
+        <button className="JoinButton" onClick={ () => {navigate("/join")} }>14기 지원하러 가기</button>
       </div>
     </div>
   );

@@ -15,3 +15,26 @@ body {
   font-weight: bold;
   font-size: x-large;
 }
+
+.JoinButton {
+	box-shadow:inset 0px 1px 0px 0px #380de3;
+	background-color:#4f00fa;
+	border-radius:6px;
+	border:1px solid #4820e6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #411cd6;
+}
+.JoinButton:hover {
+	background-color:#4803de;
+}
+.JoinBUtton:active {
+	position:relative;
+	top:1px;
+}
+
