@@ -18,7 +18,7 @@ function Main() {
         <div className="about-list">
           <div className="about-text">
             <img className="about-img" alt="Research" src={require('../img/research.png')} />
-            <h1>한세고 유일 보안 연구 동아리</h1>
+            <h1>교내 유일 보안 연구 동아리</h1>
             <p>대회 운영이나 친목 위주의 타 전공 동아리와 달리,</p>
             <p>SSR에서는 자유롭게 보안 연구와 개발에만 집중할 수 있습니다.</p>
           </div>
