@@ -19,7 +19,9 @@ const Header = () => {
     <div>
       <div className="head">
         <div className="logo">
-          <img className="logo-img" alt="SSR" src={require('../img/SSR-logo.png')} />
+          <Link to="/">
+            <img className="logo-img" alt="SSR" src={require('../img/SSR-logo.png')} />
+          </Link>
         </div>
         <div className="menu">
           <MenuItem to="/">main</MenuItem>

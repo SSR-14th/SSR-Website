@@ -1,0 +1,17 @@
+body {
+  background-color: #282c34;
+}
+
+.Main {
+  text-align: center;
+}
+
+.SSRImage {
+  padding: 50px;
+}
+
+.SSRText {
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
