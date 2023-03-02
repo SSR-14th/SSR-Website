@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
 
+import { Link } from 'react-router-dom';
+
 const MenuItem = (props: any) => {
   const { children } = props;
   return (
-    <div className="menu-item">{children}</div>
+    <div className="menu-item">
+      <Link className="menu-item-link" to="/">{children}</Link>
+    </div>
   );
 };
 

@@ -4,7 +4,6 @@
 
 .menu-item {
   display: inline-block;
-  color: white;
   font-size: 1.2rem;
   font-style: bold;
   line-height: 3.5rem;
@@ -22,4 +21,9 @@
 .menu-item:active,
 .menu-item.active {
   background-color: #9cd7ee;
+}
+
+.menu-item-link {
+  color: white;
+  text-decoration-line: none;
 }
