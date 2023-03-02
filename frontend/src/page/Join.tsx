@@ -153,7 +153,8 @@ function Main() {
           />
           <br/><br/><br/>
 
-          <button type="submit" disabled={disabled}>제출</button>
+          <button className="submitButton" type="submit" disabled={disabled}>신청서 제출</button>
+          <br/><br/><br/>
         </form>
       </div>
     </div>
