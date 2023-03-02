@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import './Join.css';
 import './Style.css';
 
+import axios from 'axios';
+
 import Header from "../component/Header";
 import Name from "../component/Name";
 
 function Main() {
+  const SSR_API: string = "http://127.0.0.1:8000";
   const [disabled, setDisabled]: any = useState(false);
   
   const [num, setNum]: any = useState("");
@@ -33,7 +36,25 @@ function Main() {
     setDisabled(true);
     event.preventDefault();
     await new Promise((r) => setTimeout(r, 1000));
-    alert("제출이 완료되었습니다.");
+    axios.post( SSR_API + "/api/form",
+    {
+      num: parseInt(num),
+      name: name,
+      phone: phone,
+      mail: mail,
+      q0: q0,
+      q1: q1,
+      q2: q2
+    },
+    {
+      headers:{
+        'Content-type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+    .then((response) => { console.log(response.data); })
+    .catch((response) => { console.log("서버 오류") });
+    //alert("제출이 완료되었습니다.");
     setDisabled(false);
   };
 

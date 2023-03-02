@@ -3,10 +3,25 @@ from typing import List, Optional
 from fastapi import FastAPI, Response, status
 from pydantic import BaseModel, parse_obj_as
 
+from starlette.middleware.cors import CORSMiddleware
+
 from app.config import *
 from app.model import *
 
 app = FastAPI()
+
+# 쿠키나 토큰이 없기 때문에 모두 허용해도 보안 문제가 없다.
+origins = [
+    "*",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class Data(BaseModel):
   num: int
