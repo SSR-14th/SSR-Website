@@ -79,6 +79,7 @@ function Main() {
           <div className="Text">학번</div>
           <br/>
           <input
+          className="small-input"
           type="text"
           name="num"
           value={num}
@@ -89,6 +90,7 @@ function Main() {
           <div className="Text">이름</div>
           <br/>
           <input
+          className="small-input"
           type="text"
           name="text"
           value={name}
@@ -99,6 +101,7 @@ function Main() {
           <div className="Text">전화번호</div>
           <br/>
           <input
+          className="small-input"
           type="tel"
           name="phone"
           value={phone}
@@ -109,6 +112,7 @@ function Main() {
           <div className="Text">이메일 주소</div>
           <br/>
           <input
+          className="small-input"
           type="email"
           name="mail"
           value={mail}
@@ -119,6 +123,7 @@ function Main() {
           <div className="Text">관심분야</div>
           <br/>
           <input
+          className="small-input"
           type="text"
           name="q0"
           value={q0}
@@ -129,6 +134,7 @@ function Main() {
           <div className="Text">자기소개서</div>
           <br/>
           <input
+          className="big-input"
           type="text"
           name="q1"
           value={q1}
@@ -139,6 +145,7 @@ function Main() {
           <div className="Text">합격 후 포부</div>
           <br/>
           <input
+          className="big-input"
           type="text"
           name="q2"
           value={q2}
