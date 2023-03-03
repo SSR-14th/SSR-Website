@@ -2,7 +2,7 @@ import React from 'react';
 import './Result.css';
 import '../../style/Style.css';
 
-import { Header,Name } from "../../component";
+import { Header, Footer } from "../../component";
 
 function Main() {
   return (
@@ -34,6 +34,7 @@ function Main() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

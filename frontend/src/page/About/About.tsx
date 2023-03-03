@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import '../../style/Style.css';
 
-import { Header } from "../../component";
+import { Header, Footer } from "../../component";
 
 function Main() {
   return (
@@ -40,6 +40,7 @@ function Main() {
         <br/>
         <br/>
       </div>
+      <Footer />
     </div>
   );
 }

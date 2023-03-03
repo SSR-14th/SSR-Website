@@ -4,7 +4,7 @@ import '../../style/Style.css';
 
 import axios from 'axios';
 
-import { Header,Name } from "../../component";
+import { Header, Footer } from "../../component";
 
 function isNumeric(data : string) : boolean {
   return !isNaN(Number(data));
@@ -129,6 +129,7 @@ function Main() {
           <br/><br/><br/>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

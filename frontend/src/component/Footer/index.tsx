@@ -8,6 +8,7 @@ export const Footer = () => {
         <div>
             <footer>
                 <div className="foot">
+                  <h1>Footer</h1>
                 </div>
             </footer>
         </div>
