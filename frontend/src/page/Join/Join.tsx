@@ -66,11 +66,10 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>- Join -</Name>
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
-          <div className="Text">학번 ex) N20109</div>
+          <div className="Text">학번 ex) C10101홍길동</div>
           <br/>
           <input
           className="small-input"
@@ -125,7 +124,7 @@ function Main() {
           />
           <br/><br/><br/>
 
-          <div className="Text">자기소개서</div>
+          <div className="Text">자기소개서(700자 이내)</div>
           <br/>
           <input
           className="big-input"
@@ -135,8 +134,7 @@ function Main() {
           onChange={handleChangeQ1}
           />
           <br/><br/><br/>
-
-          <div className="Text">합격 후 포부</div>
+          <div className="Text">합격 후 포부(500자 이내)</div>
           <br/>
           <input
           className="big-input"
@@ -146,8 +144,9 @@ function Main() {
           onChange={handleChangeQ2}
           />
           <br/><br/><br/>
-
-          <button className="submitButton" type="submit" disabled={disabled}>신청서 제출</button>
+          <div className="submitButton-space">
+            <button className="submitButton" type="submit" disabled={disabled}>제출</button>
+          </div>
           <br/><br/><br/>
         </form>
       </div>
