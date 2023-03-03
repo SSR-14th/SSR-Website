@@ -22,7 +22,7 @@ function Main() {
           </div>
           <div className="about-text">
             <img className="about-img" alt="Hacker" src={require('../../img/hacker.png')} />
-            <h1>뉴비부터 고수까지 누구나</h1>
+            <h1>초보부터 고수까지 누구나</h1>
             <p>SSR에서는 기초부터 심화까지 함께 공부할 수 있습니다.</p>
             <p>또한, 비슷한 분야에 관심이 있는 친구, 선후배와 함께 프로젝트를 수행할 수 있습니다.</p>
           </div>s

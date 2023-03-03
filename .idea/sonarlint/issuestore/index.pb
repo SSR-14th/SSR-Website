@@ -1,20 +1,6 @@
 
 D
 frontend/src/App.css,8\a\8a75d7beb1451b6fe9282486fbd897a9a8156b7f
-K
-frontend/src/com/Header.css,7\5\75c8ff0327cdd33d5f6b06aba1449981b41e3cf8
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
-O
-frontend/src/component/Name.css,d\c\dc3c2d55e58b8702b01ce60163ecd55cd11c71bc
-O
-frontend/src/component/Name.tsx,b\d\bd5102dd526fe42d5e6da33e7d6bb799ab56e331
-Q
-!frontend/src/component/Header.tsx,a\8\a8f5512bc0569a024e672593e14b765e8e364810
-Q
-!frontend/src/component/Header.css,9\9\994f280c157fb62a72b6d86160efd2c0a3cf9a30
-J
-frontend/public/index.html,5\3\53b461857fde9b76a1c6e79a500050ceffbd7f33
 M
 frontend/public/404error.html,5\a\5a7c64b7d77302695b9213809e1cd0669a65f232
 L
@@ -31,5 +17,27 @@ Q
 !frontend/src/page/about/About.css,f\a\fa8662e622a6260972c3f1043e2ea425a1cdb526
 T
 $frontend/src/component/name/Name.css,f\2\f21bf8153f9fbb8e22d6598a33fcf94953320550
-T
-$frontend/src/component/name/Name.tsx,d\b\dbd30600890f5dfe0830d8ba7b54beb84d39850b
+U
+%frontend/src/component/Name/index.tsx,3\d\3d5dd71c7636cbef966d35d220ccae6ac2d261f5
+O
+frontend/src/component/index.ts,e\b\eb288b6f4106064a6480ae3dc9eb6b38ce010199
+S
+#frontend/src/page/Result/Result.css,f\3\f34dfab98e96d299deefc5b64c1302d525f0322f
+F
+frontend/src/index.tsx,d\9\d910832662c636742fd4ec7481640b032fa4a2d4
+D
+frontend/src/App.tsx,b\9\b9c5384815ed26f7912bd4d34cab45985cb9a0cd
+O
+frontend/src/page/Main/Main.tsx,3\5\35a274daefd836ce3d71802d05d2e51df1d973ca
+O
+frontend/src/page/Main/Main.css,1\3\13f03ce0e44cd123fc36e1a4514968338e7135d5
+S
+#frontend/src/page/Result/Result.tsx,f\e\fe1175b28de4daef179bed887001e1ceb3c54a36
+O
+frontend/src/page/Join/Join.css,a\c\ac93517f6510c2f56bf7bbc0f18ad0da06823298
+O
+frontend/src/page/Join/Join.tsx,5\f\5f82738de2537d15ad3c68f92a3ecee614be6d59
+W
+'frontend/src/component/Header/index.tsx,b\3\b36fe5e4678329e9a1de7f538c9a68eb157f1533
+X
+(frontend/src/component/Header/Header.css,b\2\b223f7253b879f0d07e7816cb54fc3e5cf34a149
