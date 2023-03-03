@@ -38,7 +38,7 @@ function Main() {
   const handleSubmit = async (event: any) => {
     setDisabled(true);
     event.preventDefault();
-    await new Promise((r) => setTimeout(r, 1000));
+    await new Promise((r) => setTimeout(r, 400));
     axios.post( SSR_API + "/api/form",
     {
       num: num,
@@ -68,7 +68,7 @@ function Main() {
       <div className="Main">
         <br/>
         <br/>
-        <form onSubmit={handleSubmit}>
+        <div>
           <div className="Text">학번 ex) C1101홍길동</div>
           <br/>
           <input
@@ -105,9 +105,8 @@ function Main() {
 
           <div className="Text">자기소개서(700자 이내)</div>
           <br/>
-          <input
+          <textarea
           className="big-input"
-          type="text"
           name="q1"
           value={q1}
           onChange={handleChangeQ1}
@@ -116,19 +115,19 @@ function Main() {
           <br/><br/><br/>
           <div className="Text">합격 후 포부(500자 이내)</div>
           <br/>
-          <input
+          <textarea
           className="big-input"
-          type="text"
           name="q2"
           value={q2}
+          onChange={handleChangeQ2}
           maxLength={500}
           />
           <br/><br/><br/>
           <div className="submitButton-space">
-            <button className="submitButton" type="submit" disabled={disabled}>제출</button>
+            <button className="submitButton" type="submit" disabled={disabled} onClick={handleSubmit}>제출</button>
           </div>
           <br/><br/><br/>
-        </form>
+        </div>
       </div>
     </div>
   );
