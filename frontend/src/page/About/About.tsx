@@ -9,7 +9,6 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>- About -</Name>
         <br/>
         <br/>
         <br/>
@@ -40,11 +39,6 @@ function Main() {
         <br/>
         <br/>
         <br/>
-        <div>
-          <a className="Source" href="https://www.flaticon.com/free-icon/hacker_9778077">image0 source</a>, 
-          <a className="Source" href="https://www.flaticon.com/free-icon/research_3273552">image1 source</a>, 
-          <a className="Source" href="https://www.flaticon.com/free-icon/virus_4279040">image2 source</a>
-        </div>
       </div>
     </div>
   );

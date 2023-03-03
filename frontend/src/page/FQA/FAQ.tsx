@@ -9,7 +9,6 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>- FAQ -</Name>
         <div className = "faq-list">
           <div>
           <br/>

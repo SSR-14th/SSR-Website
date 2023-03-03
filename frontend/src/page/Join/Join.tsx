@@ -69,7 +69,7 @@ function Main() {
         <br/>
         <br/>
         <form onSubmit={handleSubmit}>
-          <div className="Text">학번 ex) C10101홍길동</div>
+          <div className="Text">학번 ex) C1101홍길동</div>
           <br/>
           <input
           className="small-input"
@@ -77,31 +77,9 @@ function Main() {
           name="num"
           value={num}
           onChange={handleChangeNum}
+          maxLength={20}
           />
           <br/><br/><br/>
-
-          <div className="Text">이름</div>
-          <br/>
-          <input
-          className="small-input"
-          type="text"
-          name="text"
-          value={name}
-          onChange={handleChangeName}
-          />
-          <br/><br/><br/>
-
-          <div className="Text">전화번호</div>
-          <br/>
-          <input
-          className="small-input"
-          type="tel"
-          name="phone"
-          value={phone}
-          onChange={handleChangePhone}
-          />
-          <br/><br/><br/>
-
           <div className="Text">이메일 주소</div>
           <br/>
           <input
@@ -110,6 +88,7 @@ function Main() {
           name="mail"
           value={mail}
           onChange={handleChangeMail}
+          maxLength={50}
           />
           <br/><br/><br/>
 
@@ -132,6 +111,7 @@ function Main() {
           name="q1"
           value={q1}
           onChange={handleChangeQ1}
+          maxLength={700}
           />
           <br/><br/><br/>
           <div className="Text">합격 후 포부(500자 이내)</div>
@@ -141,7 +121,7 @@ function Main() {
           type="text"
           name="q2"
           value={q2}
-          onChange={handleChangeQ2}
+          maxLength={500}
           />
           <br/><br/><br/>
           <div className="submitButton-space">

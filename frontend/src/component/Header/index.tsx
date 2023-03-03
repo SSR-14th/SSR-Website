@@ -25,7 +25,7 @@ export const Header = () => {
                         </Link>
                     </div>
                     <div className="menu">
-                        <MenuItem to="/">main</MenuItem>
+                        <MenuItem to="/">Home</MenuItem>
                         <MenuItem to="/about">about</MenuItem>
                         <MenuItem to="/result">result</MenuItem>
                         <MenuItem to="/faq">FAQ</MenuItem>

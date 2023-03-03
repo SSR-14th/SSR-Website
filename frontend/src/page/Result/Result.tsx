@@ -9,7 +9,6 @@ function Main() {
     <div className="App">
       <Header/>
       <div className="Main">
-        <Name>- Result -</Name>
         <div className = "list">
           <div>
           <br/>
