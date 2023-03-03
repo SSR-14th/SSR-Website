@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import '../../style/Style.css';
 
-import { Header,Name } from "../../component";
+import { Header } from "../../component";
 
 function Main() {
   return (
