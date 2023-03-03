@@ -3,11 +3,11 @@ import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Main from './page/Main';
-import Join from './page/Join';
-import About from './page/About';
-import Result from './page/Result';
-import FAQ from './page/FAQ';
+import Main from './page/Main/Main';
+import Join from './page/Join/Join';
+import About from './page/About/About';
+import Result from './page/Result/Result';
+import FAQ from './page/FQA/FAQ';
 
 function App() {
   return (

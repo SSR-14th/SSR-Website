@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './Join.css';
-import './Style.css';
+import '../../style/Style.css';
 
 import axios from 'axios';
 
-import Header from "../component/Header";
-import Name from "../component/Name";
+import { Header,Name } from "../../component";
 
 function isNumeric(data : string) : boolean {
   return !isNaN(Number(data));

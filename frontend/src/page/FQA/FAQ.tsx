@@ -1,9 +1,8 @@
 import React from 'react';
 import './FAQ.css';
-import './Style.css';
+import '../../style/Style.css';
 
-import Header from "../component/Header";
-import Name from "../component/Name";
+import { Header,Name } from "../../component";
 
 function Main() {
   return (
