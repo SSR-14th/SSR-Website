@@ -24,13 +24,16 @@ body {
 }
 
 .result-type {
+  line-height: 30px;
   text-align: left;
   color: white;
   font-weight: bold;
-  font-size: large;
+  font-size: 30px;
 }
 
 .result-list {
+  line-height: 30px;
+  font-size: large;
   text-align: left;
   color: #d3d3d3;
 }

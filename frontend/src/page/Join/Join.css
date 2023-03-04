@@ -36,7 +36,7 @@ body {
 }
 
 .submitButton {
-  width: 90px;
+  width: 600px;
   max-width: 90%;
   box-shadow:inset 0px 1px 0px 0px #380de3;
   background-color:#4f00fa;
@@ -52,7 +52,7 @@ body {
   text-shadow:0px 1px 0px #411cd6;
 }
 .submitButton-space {
-  margin: 0px -517px 0px 0px;
+  margin: 0px 0% 0px 0px;
 }
 .submitButton:hover {
   background-color:#4803de;

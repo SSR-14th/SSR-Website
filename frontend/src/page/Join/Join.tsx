@@ -92,7 +92,7 @@ function Main() {
           />
           <br/><br/><br/>
 
-          <div className="Text">사용할 수 있는 기술</div>
+          <div className="Text">사용 가능한 기술</div>
           <br/>
           <input
           className="small-input"

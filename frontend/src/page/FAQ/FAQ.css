@@ -24,10 +24,10 @@ body {
 }
 
 .Q {
+  font-size: 20px;
   text-align: left;
   color: white;
   font-weight: bold;
-  font-size: large;
 }
 
 .A {

@@ -7,7 +7,7 @@ import Main from './page/Main/Main';
 import Join from './page/Join/Join';
 import About from './page/About/About';
 import Result from './page/Result/Result';
-import FAQ from './page/FQA/FAQ';
+import FAQ from './page/FAQ/FAQ';
 
 function App() {
   return (

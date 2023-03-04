@@ -22,8 +22,10 @@ function Main() {
           <div className="result-list">2016년 코드게이트 주니어 국제해킹방어대회 본선 진출</div>
           <div className="result-list">2014년 코드게이트 주니어 국제해킹방어대회 본선 진출</div>
           <br/>
+          <br/>
           <div className="result-type">교내 대회 입상</div>
           <div className="result-list">2022년 한세사이버보안고등학교 교내해킹방어대회 우승</div>
+          <br/>
           <br/>
           <div className="result-type">외부 교육과정</div>
           <div className="result-list">2022년 현대오토에버 주관 화이트해커 양성 교육 과정 1명 합격</div>
