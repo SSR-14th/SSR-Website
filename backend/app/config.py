@@ -1,4 +1,4 @@
 import os
 
-KEY = os.environ["ADMIN_KEY"]
-DSN = os.environ["DATABASE_URL"]
+KEY = "ADMIN_KEY"
+DSN = "sqlite:///main.db"
