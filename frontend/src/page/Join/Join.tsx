@@ -79,6 +79,7 @@ function Main() {
           onChange={handleChangeNum}
           maxLength={20}
           />
+         
           <br/><br/><br/>
           <div className="Text">이메일 주소</div>
           <br/>
@@ -89,6 +90,18 @@ function Main() {
           value={mail}
           onChange={handleChangeMail}
           maxLength={50}
+          />
+          <br/><br/><br/>
+
+          <div className="Text">전화번호</div>
+          <br/>
+          <input
+          className="small-input"
+          type="text"
+          name="phone"
+          value={phone}
+          onChange={handleChangePhone}
+          maxLength={20}
           />
           <br/><br/><br/>
 
