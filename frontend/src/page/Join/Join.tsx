@@ -11,7 +11,7 @@ function isNumeric(data : string) : boolean {
 }
 
 function Main() {
-  const SSR_API: string = "https://ssr2023api.run.goorm.site";
+  const SSR_API: string = "https://ssrhs2023.run.goorm.site";
   const [disabled, setDisabled]: any = useState(false);
   
   const [num, setNum]: any = useState("");
