@@ -32,6 +32,10 @@ function Main() {
             <p>SSR에서는 각종 S/W, H/W의 0-day 연구를 수행합니다.</p>
             <p>또한, 외부 해킹 대회에 함께 출전하기도 합니다.</p>
           </div>
+          <br />
+          <div className="about-text">
+            <div className="credit">This website uses Flaticon.</div>
+          </div>
         </div>
         <br/>
         <br/>

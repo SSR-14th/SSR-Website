@@ -20,6 +20,7 @@ const Main = () => {
         </div>
         <br />
         <button className="JoinButton" onClick={ () => {navigate("/join")} }>14기 지원하러 가기</button>
+        <br />
       </div>
     </div>
   );
